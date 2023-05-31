@@ -1,0 +1,31 @@
+# Macro file for example 2
+# 
+# Can be run in batch, without graphic
+# or interactively: Idle> /control/execute run1.mac
+#
+# Change the default number of workers (in multi-threading mode) 
+#/run/numberOfWorkers 4
+#
+# Initialize kernel
+/run/initialize
+#
+/control/verbose 1
+/run/verbose 1
+/event/verbose 0
+# 
+# gamma 6 MeV to the direction (0.,0.,1.)
+#
+/gun/particle gamma
+/gun/energy 700 keV
+#
+/run/beamOn 10
+# 
+# proton 210 MeV to the direction (0.,0.,1.)
+# Установка типа частиц, протонов
+#/gun/particle proton
+# Установка энергии частиц, 50 МэВ
+#/gun/energy 50 MeV
+# Установка уровня
+#/tracking/verbose 0
+# Запуск частиц, 10 тысяч
+#/run/beamOn 10000
